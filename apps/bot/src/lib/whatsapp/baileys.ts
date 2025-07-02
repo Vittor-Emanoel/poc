@@ -1,9 +1,9 @@
 import {
-	fetchLatestBaileysVersion,
-	makeCacheableSignalKeyStore,
-	default as makeWASocket,
-	useMultiFileAuthState,
-	type WASocket,
+  fetchLatestBaileysVersion,
+  makeCacheableSignalKeyStore,
+  default as makeWASocket,
+  useMultiFileAuthState,
+  type WASocket,
 } from "baileys";
 import fs from "node:fs";
 import path from "node:path";
@@ -29,7 +29,6 @@ export async function initWhatsApp(): Promise<WASocket> {
 			creds: state.creds,
 			keys: makeCacheableSignalKeyStore(state.keys),
 		},
-		printQRInTerminal: false,
 		browser: ["POC", "Chrome", "123.0.0"],
 	});
 

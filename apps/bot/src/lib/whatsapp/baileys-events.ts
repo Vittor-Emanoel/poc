@@ -1,4 +1,5 @@
 import type { Boom } from "@hapi/boom";
+import { startBot } from "@poc/bot/core/bot";
 import type { proto, WASocket } from "baileys";
 import { DisconnectReason } from "baileys";
 import fs from "node:fs";
@@ -20,7 +21,7 @@ export class BaileysEvents {
 	}
 
 	private registerListeners() {
-		this.sock.ev.on("connection.update", this.onConnectionUpdate.bind(this));
+		this.sock.ev.on("connection.update", ({connection, lastDisconnect, qr}) => this.onConnectionUpdate({connection, lastDisconnect, qr} ));
 		this.sock.ev.on("messages.upsert", this.onMessageUpsert.bind(this));
 	}
 
@@ -29,8 +30,8 @@ export class BaileysEvents {
 		lastDisconnect,
 		qr,
 	}: {
-		connection: string;
-		lastDisconnect?: { error: Boom };
+		connection?: string;
+		lastDisconnect?: { error: Error | undefined; date: Date; };
 		qr?: string;
 	}) {
 		if (qr) {
@@ -38,9 +39,8 @@ export class BaileysEvents {
 		}
 
 		if (connection === "close") {
-			const reason = lastDisconnect?.error?.output?.statusCode ?? 0;
-			const shouldReconnect = reason !== DisconnectReason.loggedOut;
-
+			const shouldReconnect = (lastDisconnect?.error as Boom)?.output?.statusCode === DisconnectReason.restartRequired 
+      
 			if (shouldReconnect) {
 				this.logger.warn("Tentando reconectar...");
 				setTimeout(this.reconnectFn, 5000);
@@ -63,25 +63,10 @@ export class BaileysEvents {
 		type: string;
 	}) {
 		if (type !== "notify") return;
-
+    
 		for (const msg of messages) {
-			if (!msg.message || msg.key.fromMe) continue;
-
-			const from = msg.key.remoteJid!;
-			const text =
-				msg.message?.conversation ?? msg.message?.extendedTextMessage?.text;
-
-			if (!text) return;
-
-			this.logger.info(`📩 ${from}: ${text}`);
-
-			try {
-				if (text.startsWith("!ping")) {
-					await this.sock.sendMessage(from, { text: "pong 🏓" });
-				}
-			} catch (err) {
-				this.logger.error("❌ Erro ao enviar mensagem:", err);
-			}
+      if (!msg.message || msg.key.fromMe) return;
+      await startBot(this.sock, msg);
 		}
 	}
 }
