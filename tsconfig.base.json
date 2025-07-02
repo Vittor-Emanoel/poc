@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "ESNext",
+    "lib": ["DOM", "ESNext"],
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "skipLibCheck": true,
+    "baseUrl": ".",
+    "paths": {
+      "@poc/db": ["packages/db/src"],
+      "@poc/bot/*": ["apps/bot/src/*"]
+    },
+    "jsx": "react-jsx",
+    "sourceMap": true,
+    "outDir": "dist"
+  }
+}

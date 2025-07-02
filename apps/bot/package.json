@@ -1,0 +1,26 @@
+{
+  "name": "@poc/bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsx  src/index.ts",  
+    "build": "tsup src/index.ts --format esm --dts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@hapi/boom": "^10.0.1",
+    "baileys": "^6.7.18",
+    "fastify": "^5.4.0",
+    "pino": "^9.7.0",
+    "qrcode": "^1.5.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.0.6",
+    "tsup": "^8.5.0",
+    "tsx": "^4.20.3"
+  }
+}

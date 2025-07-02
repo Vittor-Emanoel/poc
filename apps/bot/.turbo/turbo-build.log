@@ -1,0 +1,5 @@
+
+> @poc/bot@1.0.0 build C:\Users\VittorEmanoel\Pictures\poc (1)\poc\apps\bot
+> tsup src/index.ts --format esm --dts
+
+'tsup' nÆo ‚ reconhecido como um comando interno

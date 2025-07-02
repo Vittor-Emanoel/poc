@@ -1,0 +1,20 @@
+{
+  "name": "poc",
+  "private": true,
+  "version": "1.0.0",
+  "packageManager": "pnpm@10.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build"
+  },
+  "devDependencies": {
+    "turbo": "^1.13.3"
+  },
+  "dependencies": {
+    "typescript": "^5.8.3"
+  }
+}

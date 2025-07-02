@@ -1,0 +1,1 @@
+{"root":["./src/app.ts","./src/index.ts","./src/core/bot.ts","./src/lib/whatsapp/baileys-events.ts","./src/lib/whatsapp/baileys.ts"],"errors":true,"version":"5.8.3"}

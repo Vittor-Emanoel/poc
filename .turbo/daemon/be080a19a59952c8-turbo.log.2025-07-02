@@ -1,0 +1,42 @@
+2025-07-02T12:31:27.392039Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.cache"), AnchoredSystemPathBuf("node_modules\\.cache\\turbo")}
+2025-07-02T12:31:27.392084Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:31:27.486822Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules")}
+2025-07-02T12:31:27.486836Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:33:54.899347Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("turbo.json")}
+2025-07-02T12:33:54.899373Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:34:06.587472Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-02T12:34:06.587513Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:35:06.671204Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-02T12:35:06.671226Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:37:33.144850Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\postcss-load-config@6.0.1_tsx@4.20.3\\node_modules\\postcss-load-config")}
+2025-07-02T12:37:33.144883Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:37:33.250575Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\mlly@1.7.4\\node_modules\\mlly")}
+2025-07-02T12:37:33.250590Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:37:34.254719Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\bundle-require@5.1.0_esbuild@0.25.5\\node_modules\\bundle-require"), AnchoredSystemPathBuf("node_modules\\.pnpm\\fix-dts-default-cjs-exports@1.0.1\\node_modules\\fix-dts-default-cjs-exports")}
+2025-07-02T12:37:34.254778Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:37:34.450533Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\@biomejs+biome@2.0.6\\node_modules\\@biomejs\\biome")}
+2025-07-02T12:37:34.450553Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:37:55.947557Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-02T12:37:55.947575Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:37:56.043844Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-02T12:37:56.043889Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:37:56.153216Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("package.json")}
+2025-07-02T12:37:56.153233Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(All)
+2025-07-02T12:38:08.644240Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\package.json")}
+2025-07-02T12:38:08.644259Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:09.756138Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\package-json-from-dist@1.0.1\\node_modules\\package-json-from-dist\\dist")}
+2025-07-02T12:38:09.756152Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:38:16.449450Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("node_modules\\.pnpm\\async-mutex@0.5.0\\node_modules\\async-mutex\\lib\\errors.js")}
+2025-07-02T12:38:16.449470Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Root, path: AnchoredSystemPathBuf("") }}))
+2025-07-02T12:38:19.156298Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\auth_info"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\creds.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-5511941742452-1606181299@g.us--5511942418145--0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\pre-key-3.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\session-5511942418145.0.json")}
+2025-07-02T12:38:19.156319Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:21.429265Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\auth_info\\pre-key-9.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-5511941742452-1606181299@g.us--5511941742452--0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\pre-key-11.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\pre-key-5.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\session-5511991859695.0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\pre-key-18.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\session-5511952696211.0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-5511941742452-1606181299@g.us--5511942418145--0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\creds.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-120363398529008036@g.us--5511991859695--0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\session-5511948662941.0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\session-5511941742452.0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-status@broadcast--5511948662941--0.json"), AnchoredSystemPathBuf("apps\\bot\\auth_info\\sender-key-status@broadcast--5511952696211--0.json")}
+2025-07-02T12:38:21.429296Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:21.437802Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun
+2025-07-02T12:38:36.254987Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\src\\index.ts")}
+2025-07-02T12:38:36.255006Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:49.586710Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\auth_info\\creds.json")}
+2025-07-02T12:38:49.586746Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:50.830561Z  WARN turborepo_lib::package_changes_watcher: changed_files: {AnchoredSystemPathBuf("apps\\bot\\auth_info\\creds.json")}
+2025-07-02T12:38:50.830577Z  WARN turborepo_lib::package_changes_watcher: changed_packages: Ok(Some({WorkspacePackage { name: Other("@poc/bot"), path: AnchoredSystemPathBuf("apps\\bot") }}))
+2025-07-02T12:38:50.834792Z  WARN turborepo_lib::package_changes_watcher: hashes are the same, no need to rerun

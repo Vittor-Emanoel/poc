@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  db:
+    image: pbitnami/postgresql
+    restart: always
+    container_name: poc_postgres
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: poc
+    ports:
+      - "5432:5432"
